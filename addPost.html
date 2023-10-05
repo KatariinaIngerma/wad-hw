@@ -20,12 +20,22 @@
             </a>
         </div>
     </header>
-    <fieldset>
-        <label for="postbody">Post body:</label>
-        <textarea placeholder="Write something.."></textarea><br><br>
-        <label for="fileUpload">Select file: </label>
-        <input type="file" id="fileUpload" /><br><br>
-        <button onclick="window.location.href = 'index.html';">Create post</button>
-    </fieldset>
+    <div class="container">
+    <div class="column column1"></div>
+    <div class="column column2">
+        <fieldset>
+            <div class="post">
+            <label for="postbody">Post body:</label>
+            </div>
+            <div class="textbox">
+            <textarea id = "postbody" placeholder="Write something.."></textarea><br><br>
+            </div>
+            <label>Select file: </label>
+            <input type="file" id="fileUpload" /><br><br>
+            <button onclick="window.location.href = 'index.html';">Create post</button>
+        </fieldset> 
+    </div> 
+    <div class="column column3"></div>
+    </div> 
   </body>
 </html>
