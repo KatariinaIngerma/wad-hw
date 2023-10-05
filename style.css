@@ -4,7 +4,9 @@ header {
     align-items: center; 
     background-color: #dddddd;
     border-radius: 10px;
-    padding: 8px 20px; 
+    padding: 10px 20px; 
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 ul {
@@ -15,15 +17,90 @@ ul {
 }
 
 li {
-    display: inline-block; 
-    
+    display: inline-block;  
 }
 
 li a {
     text-decoration: none; 
 }
+a:hover {
+    background-color: #f5427b;
+  }
 
 .header-image img {
     width: 50px; 
     height: 50px; 
+}
+/**/
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+}
+
+.column2 {
+    flex-grow: 2.5; /*Keskmine column laiem*/
+}
+.column1 {
+    background-color: #dddddd;
+    margin: 20px;
+    border-radius: 10px;
+}
+.column3 {
+    background-color: #dddddd;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .column1,
+    .column3 {
+        display: none; 
+    }
+}
+/* Post */
+.post {
+    margin: 20px; 
+    padding: 10px;
+    background-color: #dddddd;
+    border-radius: 10px;
+}
+
+.post img {
+    max-width: 100%; 
+}
+
+.post > .post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.profile-picture img {
+    width: 30px; 
+    height: 30px; 
+}
+.post-content p {
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+}
+.like-icon {
+    display: block;
+    margin-left: 10px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center; 
+    background-color: #dddddd;
+    padding: 10px; 
+    border-radius: 10px; 
+    margin-left: 20px;
+    margin-right: 20px;
 }
