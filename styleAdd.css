@@ -1,1 +1,30 @@
 
+header {
+    display: flex;
+    justify-content: space-between; /*nav laheb vasakule ja pilt paremale*/
+    align-items: center; 
+    background-color: #dddddd;
+    border-radius: 10px;
+    padding: 8px 20px; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline-block; 
+    
+}
+
+li a {
+    text-decoration: none; 
+}
+
+.header-image img {
+    width: 50px; 
+    height: 50px; 
+}
