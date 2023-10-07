@@ -91,3 +91,9 @@ fieldset {
     align-items: center;
     
 }
+
+
+.post ~ .text button {
+  background-color: rosybrown;
+  font: bold;
+}
