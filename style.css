@@ -22,8 +22,9 @@ li {
 
 li a {
     text-decoration: none; 
+    color: black;
 }
-a:hover {
+header nav ul li a:hover {
     background-color: #f5427b;
   }
 
@@ -73,6 +74,9 @@ a:hover {
 .post img {
     max-width: 100%; 
 }
+img + p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .post > .post-header {
     display: flex;
@@ -88,12 +92,12 @@ a:hover {
     display: block;
     text-align: left;
     margin-left: 10px;
+    
 }
 .like-icon {
     display: block;
     margin-left: 10px;
 }
-
 
 /* Footer */
 footer {

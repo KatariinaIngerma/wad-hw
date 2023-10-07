@@ -46,6 +46,7 @@ fieldset {
     padding: 10px;
     background-color: #dddddd;
     border-radius: 10px;
+    border: none;
 }
 .container {
     display: flex;
@@ -89,9 +90,7 @@ fieldset {
 .post {
     display: flex;
     align-items: center;
-    
 }
-
 
 .post ~ .text button {
   background-color: rosybrown;
