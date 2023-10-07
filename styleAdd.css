@@ -30,22 +30,22 @@ li a {
 }
 
 textarea {
-  width: 200%;
-  height: 150px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: mistyrose;
-  resize: none;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px 20px; 
+    margin-left: 10px;
+    width: 400%;
+    height: 100px;
+    background-color: white;
+    resize: none;
 }
 
 fieldset {
-  padding: 0 10px 10px;
-  border: 1px solid #666;
-  border-radius: 8px;
-  box-shadow: 0 0 10px #666;
-  padding-top: 10px;
+    display: flexbox;
+    text-align: left;
+    padding: 10px;
+    background-color: #dddddd;
+    border-radius: 10px;
 }
 .container {
     display: flex;
@@ -60,6 +60,7 @@ fieldset {
 .column2 {
     flex-grow: 2.5; /*Keskmine column laiem*/
     margin: 20px;
+
 }
 .column1 {
     background-color: #dddddd;
@@ -77,14 +78,14 @@ fieldset {
         display: none; 
     }
 }
-.textbox {
-	display: flex
-   
-}
-.tekst{
-	display: flex;
+
+.textbox{
+    display: flex;
+    width: 90%;
+    height: 100px;
 
 }
+
 .post {
     display: flex;
     align-items: center;
