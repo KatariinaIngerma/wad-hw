@@ -1,11 +1,12 @@
-
 header {
     display: flex;
     justify-content: space-between; /*nav laheb vasakule ja pilt paremale*/
     align-items: center; 
     background-color: #dddddd;
     border-radius: 10px;
-    padding: 8px 20px; 
+    padding: 10px 20px; 
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 ul {
@@ -22,7 +23,12 @@ li {
 
 li a {
     text-decoration: none; 
+    color: black;
 }
+
+header nav ul li a:hover {
+    background-color: #f5427b;
+  }
 
 .header-image img {
     width: 50px; 
