@@ -29,11 +29,11 @@ div > p {
 
 header {
     height: 60px;
-    margin: 0;
-    padding: 0;
     list-style: none;
     background-color:deeppink;
     text-align: left;
+    border-radius: 10px;
+    
 }  
 
 .header-image img{
