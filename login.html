@@ -1,1 +1,75 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.home.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+    </head>
 
+<body>
+
+    <div class="blur-layer"></div> 
+    
+    <header class="header">
+        <ul class="nav">
+            <li><a href="#" onclick="window.location.href='index.html';">Home</a></li>
+        </ul>
+
+        <div class="header-image">
+            <a href="#">
+                <img src="https://static-00.iconduck.com/assets.00/profile-circle-icon-512x512-zxne30hp.png" alt="Clickable Image">
+            </a>
+        </div>
+        
+    </header>
+
+
+    <div class="container">
+       
+        <div class="info">
+            <h2 id="welcome">Welcome to PostIt!</h2>
+            <h3>Create an account</h3>
+            <p>or</p>
+            <p>Please log in</p>
+
+            <form action="/actionpage" onsubmit="return validateForm()">
+                <div class="form">
+                <input type="email" name="email" id="email" required placeholder="Email">
+                <br>
+                <br>
+                <input type="password" id="pass" name="password" required placeholder="Password">
+                </div>
+                <br>
+                <center><button type="submit" class="button">Log in</button></center>
+            </form>
+            
+            <script>
+                function validateForm() {
+                    var email = document.getElementById("email").value;
+                    var password = document.getElementById("pass").value;
+            
+                    if (email === "" || password === "") {
+                        alert("Please fill in both fields.");
+                        return false; 
+                    }
+                    window.location.href = 'index.html';
+                    return false; 
+                }
+            </script>
+            <br>
+            <p id="forget">Forget password</p>
+
+        </div>
+
+
+       
+    </div>
+
+
+</body>
+
+
+
+</html>
