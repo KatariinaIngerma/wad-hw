@@ -85,21 +85,14 @@ li a:hover {
 
 }
 
+
+
 #welcome {
     font-size: x-large;
     font-weight: bold;
     color:indigo;
 }
 
-#forget {
-    font-size: large;
-    color:indigo;
-}
-
-#forget:hover {
-    font-size: 130%;
-    text-decoration:underline;
-}
 
 .info p {
     font-size: medium;
@@ -137,6 +130,17 @@ input:focus {
 .button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+.info + p {
+    font-size: large;
+    color:indigo;
+}
+
+.info + p:hover {
+    font-size: 130%;
+    text-decoration:underline;
+}
+
 
 @media screen and (max-width: 600px) {
     li a {
