@@ -28,35 +28,41 @@ div > p {
 }
 
 header {
-    height: 60px;
-    list-style: none;
-    background-color:deeppink;
-    text-align: left;
+    display: flex;
+    justify-content: space-between; /*nav laheb vasakule ja pilt paremale*/
+    align-items: center; 
+    background-color: rgb(226, 9, 125, 0.7);
     border-radius: 10px;
-    
-}  
+    padding: 10px 20px; 
+    margin-left: 20px;
+    margin-right: 20px;
 
-.header-image img{
-   position: absolute;
-   top: 1vh;
-   right: 2vh;
-   height: 50px;
 }
 
-.nav {
-    list-style: none;
+ul {
+    list-style-type: none;
+    margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
+li {
+    display: inline-block; 
+    
+}
 
 li a {
-    color: aliceblue;
-    text-decoration: none;
-    font-size: 30px;
-    line-height: 45px;
+    text-decoration: none; 
+    color: black;
 }
-li a:hover {
-    background-color: indigo;
+
+header nav ul li a:hover {
+    background-color: #f5427b;
+  }
+
+.header-image img {
+    width: 50px; 
+    height: 50px; 
 }
 
 .container {
