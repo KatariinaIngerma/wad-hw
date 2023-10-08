@@ -1,0 +1,104 @@
+header {
+    display: flex;
+    justify-content: space-between; /*nav laheb vasakule ja pilt paremale*/
+    align-items: center; 
+    background-color: #dddddd;
+    border-radius: 10px;
+    padding: 10px 20px; 
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline-block; 
+    
+}
+
+li a {
+    text-decoration: none; 
+    color: black;
+}
+
+header nav ul li a:hover {
+    background-color: #f5427b;
+  }
+
+.header-image img {
+    width: 50px; 
+    height: 50px; 
+}
+
+textarea {
+    display: flex;
+    border-radius: 10px;
+    padding: 10px 20px; 
+    margin-left: 10px;
+    width: 400%;
+    height: 100px;
+    background-color: white;
+    resize: none;
+}
+
+fieldset {
+    display: flexbox;
+    text-align: left;
+    padding: 10px;
+    background-color: #dddddd;
+    border-radius: 10px;
+    border: none;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+}
+
+.column2 {
+    flex-grow: 2.5; /*Keskmine column laiem*/
+    margin: 20px;
+
+}
+.column1 {
+    background-color: #dddddd;
+    margin: 20px;
+    border-radius: 10px;
+}
+.column3 {
+    background-color: #dddddd;
+    margin: 20px;
+    border-radius: 10px;
+}
+@media (max-width: 600px) {
+    .column1,
+    .column3 {
+        display: none; 
+    }
+}
+
+.textbox{
+    display: flex;
+    width: 90%;
+    height: 100px;
+
+}
+
+.post {
+    display: flex;
+    align-items: center;
+}
+
+.post ~ .text button {
+  background-color: rosybrown;
+  font: bold;
+}
