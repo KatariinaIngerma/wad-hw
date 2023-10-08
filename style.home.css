@@ -16,7 +16,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/Users/annaovtsinnikova/Downloads/wad-hw1/IMG_2035.JPG");
+    background-image: url("IMG_2035.JPG");
     background-size: cover;
     filter: blur(3px);
     -webkit-filter:blur(3px);
@@ -86,14 +86,12 @@ li a:hover {
 }
 
 #welcome {
-    /* text-align: center; */
     font-size: x-large;
     font-weight: bold;
     color:indigo;
 }
 
 #forget {
-    /* text-align: center; */
     font-size: large;
     color:indigo;
 }
@@ -104,7 +102,6 @@ li a:hover {
 }
 
 .info p {
-    /* text-align: center; */
     font-size: medium;
     margin: 0 0 10px;
     color:black
