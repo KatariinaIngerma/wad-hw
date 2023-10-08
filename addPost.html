@@ -1,1 +1,48 @@
-
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="styleAdd.css">
+        <title>Home</title>
+    </head>
+  <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li class="separator">|</li>
+                <li><a href="addPost.html">addPost</a></li>
+                <li class="separator">|</li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="header-image">
+            <a href="#">
+                <img src="https://static-00.iconduck.com/assets.00/profile-circle-icon-512x512-zxne30hp.png" alt="Clickable Image">
+            </a>
+        </div>
+    </header>
+    <div class="container">
+    <div class="column column1"></div>
+    <div class="column column2">
+        <fieldset>
+            <div class="post">
+                <div class="text">
+                    <label for="postbody">Post body: </label>
+                </div>
+                <div class="textbox">
+                    <textarea id = "postbody" placeholder="Write something.."></textarea><br><br>
+                </div>
+            </div>
+            <div class="text">
+                <label>Select file: </label>
+                <input type="file" id="fileUpload" /><br><br>
+                <button onclick="window.location.href = 'index.html';">Create post</button>
+    
+            </div>
+        </fieldset> 
+    </div> 
+    <div class="column column3"></div>
+    </div> 
+  </body>
+</html>
