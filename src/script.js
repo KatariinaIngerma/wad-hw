@@ -57,3 +57,24 @@ function formatDate(inputDate) {
     const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false };
     return date.toLocaleDateString('en-EE', options);
 }
+
+// Displaying dropdown menu on click
+document.addEventListener("DOMContentLoaded", function () {
+    const dropbtn = document.querySelector(".dropbtn");
+    const dropdownContent = document.getElementById("myDropdown");
+
+    dropbtn.addEventListener("click", function () {
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+            dropdownContent.style.display = "block";
+        }
+    });
+});
+
+
+
+
+
+
+
