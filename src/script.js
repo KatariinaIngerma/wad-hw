@@ -24,21 +24,23 @@ window.onload = function() {
                 const div_post_content = document.createElement('div');
                 div_post_content.className = 'post-content';
 
-                const img = document.createElement('img');
-                img.src = post.img;
-
                 const p = document.createElement('p');
                 p.textContent = post.body;
 
                 const div_post_footer = document.createElement('div');
                 div_post_footer.className = 'post-footer';
                 
+                if (post.img) {
+                    const img = document.createElement('img');
+                    img.src = post.img;
+                    div_post_content.appendChild(img);
+                }
 
                 const div_like = document.createElement('img');
                 div_like.className = 'likeButton';
                 div_like.src =likePic;
 
-                div_post_content.appendChild(img);
+                
                 div_post_content.appendChild(p);
                 div_post_header.appendChild(div_post_profilepic);
                 div_post_header.appendChild(div_post_date);
@@ -46,7 +48,6 @@ window.onload = function() {
                 div_post.appendChild(div_post_header);
                 div_post.appendChild(div_post_content);
                 div_post.appendChild(div_post_footer);
-
 
                 document.getElementById('column2').appendChild(div_post);
 
