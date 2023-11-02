@@ -32,6 +32,44 @@ header nav ul li a:hover {
     width: 50px; 
     height: 50px; 
 }
+
+.dropdown {
+    position: relative;
+   
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none; /* menu hidden by default */
+    position: absolute;
+    right: -20px;
+    background-color: #dddddd;
+    min-width: 160px;
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+    border-radius: 10px;
+}
+
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 12px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+}
+
+
+/* show the menu when hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
 /**/
 .container {
     display: flex;
@@ -44,7 +82,7 @@ header nav ul li a:hover {
 }
 
 .column2 {
-    flex-grow: 2.5; /*Keskmine column laiem*/
+    flex-grow: 2.5; /*middle column is wider*/
 }
 .column1 {
     background-color: #dddddd;
@@ -60,7 +98,8 @@ header nav ul li a:hover {
 @media (max-width: 600px) {
     .column1,
     .column3 {
-        display: none; 
+        display: none;          
+
     }
 }
 /* Post */
