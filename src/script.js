@@ -30,6 +30,7 @@ window.onload = function() {
                 const div_post_footer = document.createElement('div');
                 div_post_footer.className = 'post-footer';
                 
+                // if post has an image then add the image to the post
                 if (post.img) {
                     const img = document.createElement('img');
                     img.src = post.img;
