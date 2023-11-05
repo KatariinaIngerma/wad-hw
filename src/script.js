@@ -1,7 +1,7 @@
 window.onload = function() {
 
-    //fetch('res/json/myjson.json')
-    fetch('https://api.npoint.io/093fde08457af2fa9025')
+    fetch('res/json/myjson.json')
+    //fetch('https://api.npoint.io/093fde08457af2fa9025')
         .then((response) => response.json())
         .then(data => {
             
